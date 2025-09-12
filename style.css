@@ -1,14 +1,4 @@
-@define-color bg    #282828; 
-@define-color fg    #ebdbb2; 
-@define-color blk   #32344a; 
-@define-color red   #cc241d; 
-@define-color grn   #98971a; 
-@define-color ylw   #d79921; 
-@define-color blu   #458588; 
-@define-color mag   #b16286; 
-@define-color cyn   #689d6a; 
-@define-color brblk #a89984; 
-@define-color white #fbf1c7; 
+@import "mocha.css";
 
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
@@ -17,26 +7,26 @@
 }
 
 window#waybar {
-    background-color: @bg;
-    color: @fg;
+    background-color: shade(@base, 0.9);
+    color: @rosewater;
 }
 
 #workspaces button {
     padding: 0 6px;
-    color: @cyn;
+    color: @blue;
     background: transparent;
-    border-bottom: 3px solid @bg;
+    border-bottom: 3px solid @text;
 }
 #workspaces button.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
+    color: @blue;
+    border-bottom: 3px solid @blue;
 }
 #workspaces button.empty {
-    color: @white;
+    color: @text;
 }
 #workspaces button.empty.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
+    color: @text;
+    border-bottom: 3px solid @blue;
 }
 
 #workspaces button.urgent {
@@ -57,41 +47,41 @@ button:hover {
 #network,
 #tray {
     padding: 0 8px;
-    color: @white;
+    color: @text;
 }
 
 #custom-sep {
-    color: @brblk;
+    color: @rosewater;
 }
 
 #clock {
-    color: @cyn;
-    border-bottom: 4px solid @cyn;
+    color: @sky;
+    border-bottom: 4px solid @sky;
 }
 
 #battery {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @green;
+    border-bottom: 4px solid @green;
 }
 
 #disk {
-    color: @ylw;
-    border-bottom: 4px solid @ylw;
+    color: @yellow;
+    border-bottom: 4px solid @yellow;
 }
 
 #memory {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @lavender;
+    border-bottom: 4px solid @lavender;
 }
 
 #cpu {
-    color: @grn;
-    border-bottom: 4px solid @grn;
+    color: @peach;
+    border-bottom: 4px solid @peach;
 }
 
 #network {
-    color: @blu;
-    border-bottom: 4px solid @blu;
+    color: @blue;
+    border-bottom: 4px solid @blue;
 }
 
 #network.disconnected {
