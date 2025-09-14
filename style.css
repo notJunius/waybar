@@ -8,7 +8,7 @@
 
 window#waybar {
     background-color: shade(@base, 0.9);
-    color: @rosewater;
+    color: @pink;
 }
 
 #workspaces button {
